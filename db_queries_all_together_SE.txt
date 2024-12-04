@@ -1,0 +1,77 @@
+create database resumes;
+use resumes;
+create table employees(Name varchar(50),Email varchar(50),Resume mediumblob,score float,location varchar(30), category varchar(50));
+
+create table HR(Position varchar(25) not null,Experience int not null);
+CREATE TABLE skills (
+    position VARCHAR(255) NOT NULL,
+    skills TEXT NOT NULL
+);
+
+INSERT INTO HR (Position, Experience)
+VALUES
+    ('python developer', 2),
+    ('data scientist', 3),
+    ('java developer', 4),
+    ('web developer', 1),
+    ('mobile app developer', 3),
+    ('cloud engineer', 5),
+    ('devops engineer', 4),
+    ('software tester', 2),
+    ('database administrator', 5),
+    ('machine learning engineer', 3);
+
+
+
+INSERT INTO skills (position, skills)
+VALUES
+    ('software engineer', 'programming, debugging, design patterns, agile methodologies'),
+    ('python developer', 'python, machine learning, django, flask, numpy, pandas'),
+    ('data scientist', 'python, pandas, numpy, statistics, visualization, tensorflow'),
+    ('java developer', 'java, spring, hibernate, restful api, maven, gradle'),
+    ('web developer', 'html, css, javascript, react, angular, nodejs'),
+    ('mobile app developer', 'android, kotlin, swift, react native, flutter'),
+    ('cloud engineer', 'aws, azure, gcp, kubernetes, docker, terraform'),
+    ('devops engineer', 'ci/cd, docker, jenkins, ansible, kubernetes, cloud'),
+    ('network engineer', 'networking, cisco, firewall, routing, switching, vpn'),
+    ('software tester', 'testing, selenium, junit, integration testing, regression testing'),
+    ('database administrator', 'sql, nosql, mysql, postgresql, mongodb'),
+    ('machine learning engineer', 'python, tensorflow, keras, scikit-learn, pytorch'),
+    ('blockchain developer', 'solidity, ethereum, hyperledger, smart contracts, cryptography'),
+    ('digital marketer', 'seo, content marketing, analytics, ppc, email marketing'),
+    ('ui/ux designer', 'adobe xd, figma, wireframes, user research, prototyping'),
+    ('project manager', 'scrum, agile, kanban, pmp, team management'),
+    ('graphic designer', 'photoshop, illustrator, coreldraw, after effects, typography'),
+    ('game developer', 'unity, unreal engine, c++, blender, 3d modeling'),
+    ('artificial intelligence', 'python, ai, neural networks, deep learning, reinforcement learning'),
+    ('product manager', 'product design, roadmap, market research, feature prioritization'),
+    ('technical writer', 'documentation, api writing, copywriting, editing, content creation'),
+    ('cybersecurity specialist', 'penetration testing, firewalls, network security, ethical hacking'),
+    ('data analyst', 'excel, sql, tableau, power bi, data visualization'),
+    ('financial analyst', 'accounting, finance, forecasting, valuation, risk analysis'),
+    ('seo specialist', 'seo, keyword research, google analytics, backlinking'),
+    ('sales manager', 'sales, crm, negotiation, lead generation, cold calling'),
+    ('customer support', 'customer service, crm, communication, problem solving'),
+    ('teacher', 'curriculum planning, teaching, classroom management, evaluation'),
+    ('content writer', 'writing, editing, seo, content creation, storytelling'),
+    ('system administrator', 'linux, windows, virtualization, troubleshooting, shell scripting'),
+    ('big data engineer', 'hadoop, spark, kafka, nosql, distributed systems'),
+    ('embedded systems engineer', 'c, c++, microcontrollers, firmware, iot'),
+    ('bi engineer', 'sql, power bi, tableau, data modeling, etl pipelines'),
+    ('cloud architect', 'aws, azure, gcp, infrastructure design, devops'),
+    ('full stack developer', 'html, css, javascript, python, react, nodejs'),
+    ('qa engineer', 'testing, test automation, junit, selenium, regression testing'),
+    ('business analyst', 'business process, documentation, stakeholder management, data analysis'),
+    ('hardware engineer', 'electronics, pcb design, microprocessors, vlsi, signal processing'),
+    ('medical coder', 'icd-10, hcpcs, cpt, anatomy, medical terminology'),
+    ('hr executive', 'recruitment, payroll, employee relations, performance management'),
+    ('operations manager', 'process optimization, logistics, team management, kpis'),
+    ('photographer', 'dslr, photo editing, lighting, composition, creativity'),
+    ('videographer', 'video editing, premiere pro, final cut, cinematography, storyboarding'),
+    ('chef', 'cooking, plating, inventory management, menu planning, hospitality'),
+    ('event manager', 'event planning, client management, vendor management, budgeting, negotiation'),
+    ('civil engineer', 'autocad, construction management, surveying, structural analysis, site supervision'),
+    ('mechanical engineer', 'cad, solidworks, thermodynamics, mechanics, manufacturing'),
+    ('electrical engineer', 'circuit design, power systems, plc, scada, renewable energy'),
+    ('accountant', 'accounting, tax filing, auditing, excel, financial analysis'),
+    ('logistics manager', 'supply chain, inventory management, transport, planning, warehouse management');
